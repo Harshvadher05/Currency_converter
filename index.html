@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="container">
+        <img src="pics\logo.png" class="app-icon">
+        <h1 class="app-title">Currency converter</h1>
+
+        <div class="amount">
+            <h3>Enter amount</h3>
+            <input type="number">
+        </div>
+
+        <div class="from-to">
+            <div class="from-box">
+                <h3>From</h3>
+                <div class="from-input">
+                    <div class="from-flag">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                    </div>
+                    <input type="text" value="USD" readonly>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="from-country-options"></div>
+            </div>
+
+            <div class="switch-btn">
+                <i class="fa-solid fa-right-left"></i>
+            </div>
+
+            <div class="to-box">
+                <h3>To</h3>
+                <div class="to-input">
+                    <div class="to-flag">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                    </div>
+                    <input type="text" value="INR" readonly>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="to-country-options"></div>
+            </div>
+
+        </div>
+
+        <button class="convert-btn">Get Exchange Rate</button>
+
+        <div class="result-box">
+            <h3 class="result">100 USD = 8393.40 INR</h3>
+        </div>
+    </div>
+
+    <script src="country-list.js"></script>
+    <script src="currency.js"></script>
+</body>
+</html>
